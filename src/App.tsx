@@ -2,8 +2,7 @@ import { ImageWithFallback } from './components/figma/ImageWithFallback';
 import { Button } from './components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
 import { Badge } from './components/ui/badge';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from './components/ui/hover-card';
-import { ArrowRight, Database, Brain, BarChart3, Zap, CheckCircle2, Target, Users, TrendingUp, FileText, Sparkles, ChevronDown } from 'lucide-react';
+import { ArrowRight, Database, Brain, BarChart3, Zap, CheckCircle2, Target, Users, TrendingUp, FileText, Sparkles } from 'lucide-react';
 import BXDLogo from './components/BXDLogo';
 
 export default function Homepage() {
@@ -12,7 +11,7 @@ export default function Homepage() {
       {/* Navigation */}
       <nav className="fixed top-0 w-full z-50 bg-[rgba(2,6,24,0.95)] backdrop-blur-lg border-b border-[#1d293d]">
         <div className="max-w-7xl mx-auto px-6 py-4">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-center gap-12">
             <div className="flex items-center gap-2">
               <BXDLogo className="w-8 h-8" />
               <span className="text-white text-xl font-semibold">BXD</span>
@@ -25,35 +24,6 @@ export default function Homepage() {
               <a href="#benefits" className="text-[#cad5e2] hover:text-white transition-colors">Why Us?</a>
               <a href="#technology" className="text-[#cad5e2] hover:text-white transition-colors">Stack</a>
               <a href="#partners" className="text-[#cad5e2] hover:text-white transition-colors">Partners</a>
-            </div>
-            <div className="flex items-center gap-4">
-              <HoverCard openDelay={0} closeDelay={100}>
-                <HoverCardTrigger asChild>
-                  <Button variant="ghost" className="text-white bg-[#1d293d] hover:bg-[#2a3f5f] rounded-full px-4 border border-[#2a3f5f]">
-                    Sign In
-                  </Button>
-                </HoverCardTrigger>
-                <HoverCardContent align="end" className="w-64 p-2 bg-[#0f172b] border-[#1d293d]">
-                  <a 
-                    href="#" 
-                    className="block px-3 py-2 text-[#cad5e2] hover:text-white hover:bg-[#1d293d] rounded-md transition-colors"
-                  >
-                    BXD Platform
-                  </a>
-                  <a 
-                    href="#" 
-                    className="block px-3 py-2 text-[#cad5e2] hover:text-white hover:bg-[#1d293d] rounded-md transition-colors"
-                  >
-                    Linguistic Feature Extraction
-                  </a>
-                  <a 
-                    href="#" 
-                    className="block px-3 py-2 text-[#cad5e2] hover:text-white hover:bg-[#1d293d] rounded-md transition-colors"
-                  >
-                    Essay Assessment
-                  </a>
-                </HoverCardContent>
-              </HoverCard>
             </div>
           </div>
         </div>
