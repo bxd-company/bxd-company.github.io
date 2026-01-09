@@ -48,23 +48,9 @@ export default function Homepage() {
                   Schedule a Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white" size="lg">
+                {false && <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white" size="lg">
                   View Our Case Studies
-                </Button>
-              </div>
-              <div className="flex gap-8 pt-4">
-                <div>
-                  <div className="text-3xl font-semibold text-white">500+</div>
-                  <div className="text-sm text-[#90a1b9]">Projects Delivered</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-semibold text-white">98%</div>
-                  <div className="text-sm text-[#90a1b9]">Client Satisfaction</div>
-                </div>
-                <div>
-                  <div className="text-3xl font-semibold text-white">50+</div>
-                  <div className="text-sm text-[#90a1b9]">Enterprise Clients</div>
-                </div>
+                </Button>}
               </div>
             </div>
             <div className="relative">
@@ -122,10 +108,10 @@ export default function Homepage() {
                     Gap Analysis & Roadmap
                   </li>
                 </ul>
-                <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white w-full">
+                {false && <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white w-full">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                </Button>}
               </CardContent>
             </Card>
 
@@ -158,10 +144,10 @@ export default function Homepage() {
                     Data Quality Validation
                   </li>
                 </ul>
-                <Button variant="outline" className="border-2 border-[#ad46ff] text-[#ad46ff] hover:bg-[#ad46ff] hover:text-white w-full">
+                {false && <Button variant="outline" className="border-2 border-[#ad46ff] text-[#ad46ff] hover:bg-[#ad46ff] hover:text-white w-full">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                </Button>}
               </CardContent>
             </Card>
 
@@ -194,10 +180,10 @@ export default function Homepage() {
                     Automated Workflows
                   </li>
                 </ul>
-                <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white w-full">
+                {false && <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white w-full">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                </Button>}
               </CardContent>
             </Card>
 
@@ -230,10 +216,10 @@ export default function Homepage() {
                     Data Storytelling
                   </li>
                 </ul>
-                <Button variant="outline" className="border-2 border-[#ad46ff] text-[#ad46ff] hover:bg-[#ad46ff] hover:text-white w-full">
+                {false && <Button variant="outline" className="border-2 border-[#ad46ff] text-[#ad46ff] hover:bg-[#ad46ff] hover:text-white w-full">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                </Button>}
               </CardContent>
             </Card>
           </div>
@@ -487,10 +473,10 @@ export default function Homepage() {
                     Batch processing capabilities
                   </li>
                 </ul>
-                <Button className="bg-[#00b8db] hover:bg-[#00a5c7] text-white w-full">
+                {false && <Button className="bg-[#00b8db] hover:bg-[#00a5c7] text-white w-full">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                </Button>}
               </CardContent>
             </Card>
 
@@ -534,10 +520,10 @@ export default function Homepage() {
                     Customizable rubrics
                   </li>
                 </ul>
-                <Button className="bg-[#ad46ff] hover:bg-[#9333ea] text-white w-full">
+                {false && <Button className="bg-[#ad46ff] hover:bg-[#9333ea] text-white w-full">
                   Learn More
                   <ArrowRight className="ml-2 h-4 w-4" />
-                </Button>
+                </Button>}
               </CardContent>
             </Card>
           </div>
@@ -768,9 +754,9 @@ export default function Homepage() {
                   Schedule a Consultation
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Button>
-                <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white" size="lg">
+                {false && <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white" size="lg">
                   View Our Case Studies
-                </Button>
+                </Button>}
               </div>
             </CardContent>
           </Card>
