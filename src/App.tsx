@@ -749,8 +749,8 @@ export default function Homepage() {
                 <h3 className="text-2xl text-white font-semibold mb-4">Contact Us</h3>
                 <p className="text-lg text-[#cad5e2]">
                   Reach out to us at{' '}
-                  <a href="mailto:hyan.batista@ufrpe.br" className="text-[#00b8db] hover:text-[#00d3f2] underline transition-colors">
-                    hyan.batista@ufrpe.br
+                  <a href="mailto:contato@bxd.company" className="text-[#00b8db] hover:text-[#00d3f2] underline transition-colors">
+                    contato@bxd.company
                   </a>
                 </p>
               </div>
