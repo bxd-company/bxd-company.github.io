@@ -44,13 +44,9 @@ export default function Homepage() {
                 We help businesses unlock the full potential of their data through cutting-edge analytics, AI solutions, and modern data infrastructure.
               </p>
               <div className="flex gap-4">
-                <Button className="bg-[#00b8db] hover:bg-[#00a5c7] text-white" size="lg">
-                  Schedule a Consultation
-                  <ArrowRight className="ml-2 h-5 w-5" />
+                <Button asChild className="bg-[#00b8db] hover:bg-[#00a5c7] text-white" size="lg">
+                  <a href="#contact">Contact Us<ArrowRight className="ml-2 h-5 w-5" /></a>
                 </Button>
-                {false && <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white" size="lg">
-                  View Our Case Studies
-                </Button>}
               </div>
             </div>
             <div className="relative">
@@ -79,7 +75,7 @@ export default function Homepage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-6">
-            <Card className="bg-[rgba(29,41,61,0.5)] border-[#00b8db]/30 hover:border-[#00b8db] transition-all">
+            <Card className="bg-[rgba(29,41,61,0.5)] border-[#00b8db]/30 hover:border-[#00b8db] transition-all" id="service-diagnostics">
               <CardHeader>
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#00b8db] to-[#00d3f2] flex items-center justify-center mb-4">
                   <Target className="h-6 w-6 text-white" />
@@ -115,7 +111,7 @@ export default function Homepage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-[rgba(29,41,61,0.5)] border-[#ad46ff]/30 hover:border-[#ad46ff] transition-all">
+            <Card className="bg-[rgba(29,41,61,0.5)] border-[#ad46ff]/30 hover:border-[#ad46ff] transition-all" id="service-ingestion">
               <CardHeader>
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#ad46ff] to-[#c27aff] flex items-center justify-center mb-4">
                   <Database className="h-6 w-6 text-white" />
@@ -151,7 +147,7 @@ export default function Homepage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-[rgba(29,41,61,0.5)] border-[#00b8db]/30 hover:border-[#00b8db] transition-all">
+            <Card className="bg-[rgba(29,41,61,0.5)] border-[#00b8db]/30 hover:border-[#00b8db] transition-all" id="service-transformation">
               <CardHeader>
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#00b8db] to-[#00d3f2] flex items-center justify-center mb-4">
                   <Brain className="h-6 w-6 text-white" />
@@ -187,7 +183,7 @@ export default function Homepage() {
               </CardContent>
             </Card>
 
-            <Card className="bg-[rgba(29,41,61,0.5)] border-[#ad46ff]/30 hover:border-[#ad46ff] transition-all">
+            <Card className="bg-[rgba(29,41,61,0.5)] border-[#ad46ff]/30 hover:border-[#ad46ff] transition-all" id="service-visualization">
               <CardHeader>
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#ad46ff] to-[#c27aff] flex items-center justify-center mb-4">
                   <BarChart3 className="h-6 w-6 text-white" />
@@ -749,14 +745,14 @@ export default function Homepage() {
               <p className="text-xl text-[#90a1b9] mb-8 max-w-2xl mx-auto">
                 Let's discuss how BXD can help you unlock the full potential of your data and drive business growth.
               </p>
-              <div className="flex gap-4 justify-center">
-                <Button className="bg-[#00b8db] hover:bg-[#00a5c7] text-white" size="lg">
-                  Schedule a Consultation
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-                {false && <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white" size="lg">
-                  View Our Case Studies
-                </Button>}
+              <div className="text-center" id="contact">
+                <h3 className="text-2xl text-white font-semibold mb-4">Contact Us</h3>
+                <p className="text-lg text-[#cad5e2]">
+                  Reach out to us at{' '}
+                  <a href="mailto:hyan.batista@ufrpe.br" className="text-[#00b8db] hover:text-[#00d3f2] underline transition-colors">
+                    hyan.batista@ufrpe.br
+                  </a>
+                </p>
               </div>
             </CardContent>
           </Card>
@@ -779,10 +775,10 @@ export default function Homepage() {
             <div>
               <h3 className="text-white mb-4">Services</h3>
               <ul className="space-y-2">
-                <li><a href="#services" className="text-[#90a1b9] hover:text-white transition-colors">Technical & Business Diagnostics</a></li>
-                <li><a href="#services" className="text-[#90a1b9] hover:text-white transition-colors">Data Ingestion</a></li>
-                <li><a href="#services" className="text-[#90a1b9] hover:text-white transition-colors">AI & Data Transformation</a></li>
-                <li><a href="#services" className="text-[#90a1b9] hover:text-white transition-colors">Data Visualization</a></li>
+                <li><a href="#service-diagnostics" className="text-[#90a1b9] hover:text-white transition-colors">Technical & Business Diagnostics</a></li>
+                <li><a href="#service-ingestion" className="text-[#90a1b9] hover:text-white transition-colors">Data Ingestion</a></li>
+                <li><a href="#service-transformation" className="text-[#90a1b9] hover:text-white transition-colors">AI & Data Transformation</a></li>
+                <li><a href="#service-visualization" className="text-[#90a1b9] hover:text-white transition-colors">Data Visualization</a></li>
               </ul>
             </div>
             <div>
