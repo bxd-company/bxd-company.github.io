@@ -2,16 +2,22 @@
   import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
-  import { writeFileSync } from 'fs';
+  import { writeFileSync, existsSync, readFileSync, copyFileSync } from 'fs';
 
   export default defineConfig({
     base: '/homepage/',
+    publicDir: 'public',
     plugins: [
       react(),
       {
         name: 'create-nojekyll',
         closeBundle() {
           writeFileSync('dist/.nojekyll', '');
+          // Copy CNAME if it exists
+          const cnamePath = 'public/CNAME';
+          if (existsSync(cnamePath)) {
+            copyFileSync(cnamePath, 'dist/CNAME');
+          }
         }
       }
     ],
