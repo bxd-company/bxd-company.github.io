@@ -2,10 +2,19 @@
   import { defineConfig } from 'vite';
   import react from '@vitejs/plugin-react-swc';
   import path from 'path';
+  import { writeFileSync } from 'fs';
 
   export default defineConfig({
     base: '/',
-    plugins: [react()],
+    plugins: [
+      react(),
+      {
+        name: 'create-nojekyll',
+        closeBundle() {
+          writeFileSync('dist/.nojekyll', '');
+        }
+      }
+    ],
     resolve: {
       extensions: ['.js', '.jsx', '.ts', '.tsx', '.json'],
       alias: {
