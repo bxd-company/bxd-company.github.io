@@ -1,5 +1,4 @@
-
-  # BXD - Building Extraordinary Discoveries
+# BXD - Building Extraordinary Discoveries
 
 The official homepage for BXD, a data and AI consultancy that transforms raw data into strategic business decisions. We help businesses unlock the full potential of their data through cutting-edge analytics, AI solutions, and modern data infrastructure.
 
