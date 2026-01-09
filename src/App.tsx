@@ -4,8 +4,12 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './com
 import { Badge } from './components/ui/badge';
 import { ArrowRight, Database, Brain, BarChart3, Zap, CheckCircle2, Target, Users, TrendingUp, FileText, Sparkles } from 'lucide-react';
 import BXDLogo from './components/BXDLogo';
+import { useTranslation } from 'react-i18next';
+import { LanguageSwitcher } from './components/LanguageSwitcher';
 
 export default function Homepage() {
+  const { t } = useTranslation();
+  
   return (
     <div className="min-h-screen bg-[#020618]">
       {/* Navigation */}
@@ -17,13 +21,14 @@ export default function Homepage() {
               <span className="text-white text-xl font-semibold">BXD</span>
             </div>
             <div className="hidden md:flex items-center gap-8">
-              <a href="#services" className="text-[#cad5e2] hover:text-white transition-colors">Services</a>
-              <a href="#approach" className="text-[#cad5e2] hover:text-white transition-colors">Approach</a>
-              <a href="#solutions" className="text-[#cad5e2] hover:text-white transition-colors">Solutions</a>
-              <a href="#products" className="text-[#cad5e2] hover:text-white transition-colors">Products</a>
+              <a href="#services" className="text-[#cad5e2] hover:text-white transition-colors">{t('nav.services')}</a>
+              <a href="#approach" className="text-[#cad5e2] hover:text-white transition-colors">{t('nav.approach')}</a>
+              <a href="#solutions" className="text-[#cad5e2] hover:text-white transition-colors">{t('nav.solutions')}</a>
+              <a href="#products" className="text-[#cad5e2] hover:text-white transition-colors">{t('nav.products')}</a>
               {/* <a href="#benefits" className="text-[#cad5e2] hover:text-white transition-colors">Why Us?</a> */}
               {/* <a href="#technology" className="text-[#cad5e2] hover:text-white transition-colors">Stack</a> */}
               {/* <a href="#partners" className="text-[#cad5e2] hover:text-white transition-colors">Partners</a> */}
+              <LanguageSwitcher />
             </div>
           </div>
         </div>
@@ -35,17 +40,17 @@ export default function Homepage() {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
               <Badge className="bg-[#00b8db]/10 text-[#00b8db] border-[#00b8db]/20">
-                Building Extraordinary Discoveries
+                {t('hero.badge')}
               </Badge>
               <h1 className="text-5xl lg:text-6xl text-white">
-                Transform Data into Strategic Decisions with AI
+                {t('hero.title')}
               </h1>
               <p className="text-xl text-[#90a1b9]">
-                We help businesses unlock the full potential of their data through cutting-edge analytics, AI solutions, and modern data infrastructure.
+                {t('hero.description')}
               </p>
               <div className="flex gap-4">
                 <Button asChild className="bg-[#00b8db] hover:bg-[#00a5c7] text-white" size="lg">
-                  <a href="#contact">Contact Us<ArrowRight className="ml-2 h-5 w-5" /></a>
+                  <a href="#contact">{t('hero.contactUs')}<ArrowRight className="ml-2 h-5 w-5" /></a>
                 </Button>
               </div>
             </div>
@@ -66,11 +71,11 @@ export default function Homepage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-[#ad46ff]/10 text-[#ad46ff] border-[#ad46ff]/20 mb-4">
-              Our Services
+              {t('services.badge')}
             </Badge>
-            <h2 className="text-4xl text-white mb-4">End-to-End Data Solutions</h2>
+            <h2 className="text-4xl text-white mb-4">{t('services.title')}</h2>
             <p className="text-xl text-[#90a1b9] max-w-2xl mx-auto">
-              From strategy to implementation, we deliver comprehensive data and AI solutions tailored to your business needs.
+              {t('services.description')}
             </p>
           </div>
 
@@ -80,28 +85,28 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#00b8db] to-[#00d3f2] flex items-center justify-center mb-4">
                   <Target className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-white">Technical & Business Diagnostics</CardTitle>
+                <CardTitle className="text-white">{t('services.diagnostics.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  Comprehensive assessment of your data landscape and business requirements to identify opportunities and define clear objectives.
+                  {t('services.diagnostics.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Data Maturity Assessment
+                    {t('services.diagnostics.items.assessment')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Business Process Analysis
+                    {t('services.diagnostics.items.analysis')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Infrastructure Evaluation
+                    {t('services.diagnostics.items.evaluation')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Gap Analysis & Roadmap
+                    {t('services.diagnostics.items.roadmap')}
                   </li>
                 </ul>
                 {false && <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white w-full">
@@ -116,28 +121,28 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#ad46ff] to-[#c27aff] flex items-center justify-center mb-4">
                   <Database className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-white">Data Ingestion</CardTitle>
+                <CardTitle className="text-white">{t('services.ingestion.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  Build robust pipelines to collect, validate, and integrate data from multiple sources into your analytics ecosystem.
+                  {t('services.ingestion.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Multi-Source Connectors
+                    {t('services.ingestion.items.connectors')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Real-time Streaming
+                    {t('services.ingestion.items.streaming')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Batch Processing
+                    {t('services.ingestion.items.batch')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Data Quality Validation
+                    {t('services.ingestion.items.validation')}
                   </li>
                 </ul>
                 {false && <Button variant="outline" className="border-2 border-[#ad46ff] text-[#ad46ff] hover:bg-[#ad46ff] hover:text-white w-full">
@@ -152,28 +157,28 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#00b8db] to-[#00d3f2] flex items-center justify-center mb-4">
                   <Brain className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-white">AI & Data Transformation</CardTitle>
+                <CardTitle className="text-white">{t('services.transformation.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  Transform raw data into valuable insights using advanced AI models and intelligent automation techniques.
+                  {t('services.transformation.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Machine Learning Models
+                    {t('services.transformation.items.ml')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Data Enrichment
+                    {t('services.transformation.items.enrichment')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Predictive Analytics
+                    {t('services.transformation.items.predictive')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Automated Workflows
+                    {t('services.transformation.items.workflows')}
                   </li>
                 </ul>
                 {false && <Button variant="outline" className="border-2 border-[#00b8db] text-[#00b8db] hover:bg-[#00b8db] hover:text-white w-full">
@@ -188,28 +193,28 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#ad46ff] to-[#c27aff] flex items-center justify-center mb-4">
                   <BarChart3 className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-white">Data Visualization</CardTitle>
+                <CardTitle className="text-white">{t('services.visualization.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  Create intuitive dashboards and reports that make complex data accessible and actionable for decision-makers.
+                  {t('services.visualization.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
                 <ul className="space-y-2 mb-4">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Interactive Dashboards
+                    {t('services.visualization.items.dashboards')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Custom Reporting
+                    {t('services.visualization.items.reporting')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Real-time Monitoring
+                    {t('services.visualization.items.monitoring')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Data Storytelling
+                    {t('services.visualization.items.storytelling')}
                   </li>
                 </ul>
                 {false && <Button variant="outline" className="border-2 border-[#ad46ff] text-[#ad46ff] hover:bg-[#ad46ff] hover:text-white w-full">
@@ -227,11 +232,11 @@ export default function Homepage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-[#00b8db]/10 text-[#00b8db] border-[#00b8db]/20 mb-4">
-              Our Approach
+              {t('approach.badge')}
             </Badge>
-            <h2 className="text-4xl text-white mb-4">How We Work</h2>
+            <h2 className="text-4xl text-white mb-4">{t('approach.title')}</h2>
             <p className="text-xl text-[#90a1b9] max-w-2xl mx-auto">
-              A proven methodology that delivers results from day one.
+              {t('approach.description')}
             </p>
           </div>
 
@@ -241,9 +246,9 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#00b8db] to-[#00d3f2] flex items-center justify-center text-white">
                   01
                 </div>
-                <h3 className="text-xl text-white">Discover</h3>
+                <h3 className="text-xl text-white">{t('approach.steps.discover.title')}</h3>
                 <p className="text-[#90a1b9]">
-                  We analyze your current data landscape, identify opportunities, and define clear objectives.
+                  {t('approach.steps.discover.description')}
                 </p>
               </div>
               <div className="hidden md:block absolute top-1/2 right-0 w-full h-0.5 bg-gradient-to-r from-[#00b8db] to-transparent transform translate-x-1/2" />
@@ -254,9 +259,9 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#00b8db] to-[#ad46ff] flex items-center justify-center text-white">
                   02
                 </div>
-                <h3 className="text-xl text-white">Design</h3>
+                <h3 className="text-xl text-white">{t('approach.steps.design.title')}</h3>
                 <p className="text-[#90a1b9]">
-                  Our experts architect scalable solutions tailored to your specific business requirements.
+                  {t('approach.steps.design.description')}
                 </p>
               </div>
               <div className="hidden md:block absolute top-1/2 right-0 w-full h-0.5 bg-gradient-to-r from-[#ad46ff] to-transparent transform translate-x-1/2" />
@@ -267,9 +272,9 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#ad46ff] to-[#c27aff] flex items-center justify-center text-white">
                   03
                 </div>
-                <h3 className="text-xl text-white">Develop</h3>
+                <h3 className="text-xl text-white">{t('approach.steps.develop.title')}</h3>
                 <p className="text-[#90a1b9]">
-                  We build and implement robust data solutions using industry best practices and modern tools.
+                  {t('approach.steps.develop.description')}
                 </p>
               </div>
               <div className="hidden md:block absolute top-1/2 right-0 w-full h-0.5 bg-gradient-to-r from-[#ad46ff] to-transparent transform translate-x-1/2" />
@@ -280,9 +285,9 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-full bg-gradient-to-br from-[#ad46ff] to-[#00b8db] flex items-center justify-center text-white">
                   04
                 </div>
-                <h3 className="text-xl text-white">Deliver</h3>
+                <h3 className="text-xl text-white">{t('approach.steps.deliver.title')}</h3>
                 <p className="text-[#90a1b9]">
-                  Continuous optimization and support ensure your data solutions evolve with your business.
+                  {t('approach.steps.deliver.description')}
                 </p>
               </div>
             </div>
@@ -295,20 +300,20 @@ export default function Homepage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-[#ad46ff]/10 text-[#ad46ff] border-[#ad46ff]/20 mb-4">
-              Industry Solutions
+              {t('solutions.badge')}
             </Badge>
-            <h2 className="text-4xl text-white mb-4">Tailored for Your Industry</h2>
+            <h2 className="text-4xl text-white mb-4">{t('solutions.title')}</h2>
             <p className="text-xl text-[#90a1b9] max-w-2xl mx-auto">
-              We deliver specialized data and AI solutions across multiple sectors.
+              {t('solutions.description')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="bg-[rgba(29,41,61,0.5)] border-[#1d293d]">
               <CardHeader>
-                <CardTitle className="text-white text-2xl">Clinical Intelligence</CardTitle>
+                <CardTitle className="text-white text-2xl">{t('solutions.clinical.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  Clinical analytics, patient outcomes prediction, and operational efficiency solutions for healthcare providers.
+                  {t('solutions.clinical.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -322,19 +327,19 @@ export default function Homepage() {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#00b8db]" />
-                    Patient risk stratification models
+                    {t('solutions.clinical.items.stratification')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#00b8db]" />
-                    Healthcare operations optimization
+                    {t('solutions.clinical.items.operations')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#00b8db]" />
-                    Clinical trial data analytics
+                    {t('solutions.clinical.items.trials')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#00b8db]" />
-                    Medical imaging AI analysis
+                    {t('solutions.clinical.items.imaging')}
                   </li>
                 </ul>
               </CardContent>
@@ -342,9 +347,9 @@ export default function Homepage() {
 
             <Card className="bg-[rgba(29,41,61,0.5)] border-[#1d293d]">
               <CardHeader>
-                <CardTitle className="text-white text-2xl">Smart Learning Solutions</CardTitle>
+                <CardTitle className="text-white text-2xl">{t('solutions.education.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  AI-powered learning solutions including automated essay assessment and personalized feedback systems.
+                  {t('solutions.education.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -358,19 +363,19 @@ export default function Homepage() {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#ad46ff]" />
-                    Automated essay assessment
+                    {t('solutions.education.items.assessment')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#ad46ff]" />
-                    Intelligent automatic feedback
+                    {t('solutions.education.items.feedback')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#ad46ff]" />
-                    Student performance analytics
+                    {t('solutions.education.items.analytics')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#ad46ff]" />
-                    Personalized learning pathways
+                    {t('solutions.education.items.pathways')}
                   </li>
                 </ul>
               </CardContent>
@@ -378,9 +383,9 @@ export default function Homepage() {
 
             <Card className="bg-[rgba(29,41,61,0.5)] border-[#1d293d]">
               <CardHeader>
-                <CardTitle className="text-white text-2xl">Legal Intelligence</CardTitle>
+                <CardTitle className="text-white text-2xl">{t('solutions.legal.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  Document intelligence, contract analysis, and legal research automation for law firms and legal departments.
+                  {t('solutions.legal.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -394,19 +399,19 @@ export default function Homepage() {
                 <ul className="space-y-2">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#00b8db]" />
-                    Contract analysis & review
+                    {t('solutions.legal.items.contracts')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#00b8db]" />
-                    Legal document automation
+                    {t('solutions.legal.items.automation')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#00b8db]" />
-                    Case law research AI
+                    {t('solutions.legal.items.research')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <ArrowRight className="h-4 w-4 text-[#00b8db]" />
-                    Compliance monitoring systems
+                    {t('solutions.legal.items.compliance')}
                   </li>
                 </ul>
               </CardContent>
@@ -420,11 +425,11 @@ export default function Homepage() {
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-[#00b8db]/10 text-[#00b8db] border-[#00b8db]/20 mb-4">
-              Our Products
+              {t('products.badge')}
             </Badge>
-            <h2 className="text-4xl text-white mb-4">AI-Powered Educational Tools</h2>
+            <h2 className="text-4xl text-white mb-4">{t('products.title')}</h2>
             <p className="text-xl text-[#90a1b9] max-w-2xl mx-auto">
-              Advanced linguistic analysis and assessment solutions designed for researchers and educators.
+              {t('products.description')}
             </p>
           </div>
 
@@ -434,9 +439,9 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#00b8db] to-[#00d3f2] flex items-center justify-center mb-4">
                   <Sparkles className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-white text-2xl">Linguistic Feature Extraction</CardTitle>
+                <CardTitle className="text-white text-2xl">{t('products.linguistic.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  Comprehensive text analysis tool that provides deep insights into linguistic complexity, similar to Coh-Metrix, enabling researchers to extract over 100+ linguistic features from texts.
+                  {t('products.linguistic.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -450,23 +455,23 @@ export default function Homepage() {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Syntactic complexity metrics
+                    {t('products.linguistic.items.syntactic')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Lexical diversity analysis
+                    {t('products.linguistic.items.lexical')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Cohesion and coherence measures
+                    {t('products.linguistic.items.cohesion')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Readability indices
+                    {t('products.linguistic.items.readability')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#00b8db]" />
-                    Batch processing capabilities
+                    {t('products.linguistic.items.batch')}
                   </li>
                 </ul>
                 {false && <Button className="bg-[#00b8db] hover:bg-[#00a5c7] text-white w-full">
@@ -481,9 +486,9 @@ export default function Homepage() {
                 <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-[#ad46ff] to-[#c27aff] flex items-center justify-center mb-4">
                   <FileText className="h-6 w-6 text-white" />
                 </div>
-                <CardTitle className="text-white text-2xl">Essay Assessment</CardTitle>
+                <CardTitle className="text-white text-2xl">{t('products.essay.title')}</CardTitle>
                 <CardDescription className="text-[#90a1b9]">
-                  AI-powered automated essay scoring and feedback system that provides instant, comprehensive evaluations and actionable suggestions to improve student writing.
+                  {t('products.essay.description')}
                 </CardDescription>
               </CardHeader>
               <CardContent>
@@ -497,23 +502,23 @@ export default function Homepage() {
                 <ul className="space-y-2 mb-6">
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Automated scoring and grading
+                    {t('products.essay.items.scoring')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Detailed feedback generation
+                    {t('products.essay.items.feedback')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Multi-criteria evaluation
+                    {t('products.essay.items.evaluation')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Progress tracking analytics
+                    {t('products.essay.items.tracking')}
                   </li>
                   <li className="flex items-center gap-2 text-[#cad5e2] text-sm">
                     <CheckCircle2 className="h-4 w-4 text-[#ad46ff]" />
-                    Customizable rubrics
+                    {t('products.essay.items.rubrics')}
                   </li>
                 </ul>
                 {false && <Button className="bg-[#ad46ff] hover:bg-[#9333ea] text-white w-full">
@@ -740,17 +745,17 @@ export default function Homepage() {
           <Card className="bg-gradient-to-r from-[#00b8db]/10 to-[#ad46ff]/10 border-[#00b8db]/30">
             <CardContent className="p-12 text-center">
               <h2 className="text-4xl text-white mb-4">
-                Ready to Transform Your Data?
+                {t('cta.title')}
               </h2>
               <p className="text-xl text-[#90a1b9] mb-8 max-w-2xl mx-auto">
-                Let's discuss how BXD can help you unlock the full potential of your data and drive business growth.
+                {t('cta.description')}
               </p>
               <div className="text-center" id="contact">
-                <h3 className="text-2xl text-white font-semibold mb-4">Contact Us</h3>
+                <h3 className="text-2xl text-white font-semibold mb-4">{t('cta.contactTitle')}</h3>
                 <p className="text-lg text-[#cad5e2]">
-                  Reach out to us at{' '}
+                  {t('cta.contactText')}{' '}
                   <a href="mailto:contato@bxd.company" className="text-[#00b8db] hover:text-[#00d3f2] underline transition-colors">
-                    contato@bxd.company
+                    {t('cta.email')}
                   </a>
                 </p>
               </div>
@@ -762,7 +767,7 @@ export default function Homepage() {
       {/* Footer */}
       <footer className="py-8 px-6 bg-[#020618] border-t border-[#1d293d]">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-[#90a1b9] text-sm">© 2025 BXD. All rights reserved.</p>
+          <p className="text-[#90a1b9] text-sm">{t('footer.copyright')}</p>
         </div>
       </footer>
     </div>

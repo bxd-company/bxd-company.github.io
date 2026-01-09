@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "services": "Serviços",
+    "approach": "Abordagem",
+    "solutions": "Soluções",
+    "products": "Produtos"
+  },
+  "hero": {
+    "badge": "Construindo Descobertas Extraordinárias",
+    "title": "Transforme Dados em Decisões Estratégicas com IA",
+    "description": "Ajudamos empresas a desbloquear todo o potencial de seus dados através de análises avançadas, soluções de IA e infraestrutura de dados moderna.",
+    "contactUs": "Fale Conosco"
+  },
+  "services": {
+    "badge": "Nossos Serviços",
+    "title": "Soluções de Dados de Ponta a Ponta",
+    "description": "Da estratégia à implementação, entregamos soluções abrangentes de dados e IA adaptadas às necessidades do seu negócio.",
+    "diagnostics": {
+      "title": "Diagnóstico Técnico e de Negócios",
+      "description": "Avaliação abrangente do seu cenário de dados e requisitos de negócio para identificar oportunidades e definir objetivos claros.",
+      "items": {
+        "assessment": "Avaliação de Maturidade de Dados",
+        "analysis": "Análise de Processos de Negócio",
+        "evaluation": "Avaliação de Infraestrutura",
+        "roadmap": "Análise de Lacunas e Roadmap"
+      }
+    },
+    "ingestion": {
+      "title": "Ingestão de Dados",
+      "description": "Construa pipelines robustos para coletar, validar e integrar dados de múltiplas fontes em seu ecossistema de análise.",
+      "items": {
+        "connectors": "Conectores Multi-Fonte",
+        "streaming": "Streaming em Tempo Real",
+        "batch": "Processamento em Lote",
+        "validation": "Validação de Qualidade de Dados"
+      }
+    },
+    "transformation": {
+      "title": "IA & Transformação de Dados",
+      "description": "Transforme dados brutos em insights valiosos usando modelos avançados de IA e técnicas de automação inteligente.",
+      "items": {
+        "ml": "Modelos de Machine Learning",
+        "enrichment": "Enriquecimento de Dados",
+        "predictive": "Análise Preditiva",
+        "workflows": "Fluxos de Trabalho Automatizados"
+      }
+    },
+    "visualization": {
+      "title": "Visualização de Dados",
+      "description": "Crie dashboards intuitivos e relatórios que tornam dados complexos acessíveis e acionáveis para tomadores de decisão.",
+      "items": {
+        "dashboards": "Dashboards Interativos",
+        "reporting": "Relatórios Personalizados",
+        "monitoring": "Monitoramento em Tempo Real",
+        "storytelling": "Narrativa de Dados"
+      }
+    }
+  },
+  "approach": {
+    "badge": "Nossa Abordagem",
+    "title": "Como Trabalhamos",
+    "description": "Uma metodologia comprovada que entrega resultados desde o primeiro dia.",
+    "steps": {
+      "discover": {
+        "title": "Descobrir",
+        "description": "Analisamos seu cenário atual de dados, identificamos oportunidades e definimos objetivos claros."
+      },
+      "design": {
+        "title": "Projetar",
+        "description": "Nossos especialistas arquitetam soluções escaláveis adaptadas aos seus requisitos específicos de negócio."
+      },
+      "develop": {
+        "title": "Desenvolver",
+        "description": "Construímos e implementamos soluções robustas de dados usando melhores práticas da indústria e ferramentas modernas."
+      },
+      "deliver": {
+        "title": "Entregar",
+        "description": "Otimização contínua e suporte garantem que suas soluções de dados evoluam com seu negócio."
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Soluções por Indústria",
+    "title": "Adaptadas para Sua Indústria",
+    "description": "Entregamos soluções especializadas de dados e IA em múltiplos setores.",
+    "clinical": {
+      "title": "Inteligência Clínica",
+      "description": "Análises clínicas, predição de resultados de pacientes e soluções de eficiência operacional para prestadores de saúde.",
+      "items": {
+        "stratification": "Modelos de estratificação de risco de pacientes",
+        "operations": "Otimização de operações de saúde",
+        "trials": "Análise de dados de ensaios clínicos",
+        "imaging": "Análise de imagens médicas com IA"
+      }
+    },
+    "education": {
+      "title": "Soluções de Aprendizagem Inteligente",
+      "description": "Soluções de aprendizagem alimentadas por IA, incluindo avaliação automatizada de redações e sistemas de feedback personalizado.",
+      "items": {
+        "assessment": "Avaliação automatizada de redações",
+        "feedback": "Feedback automático inteligente",
+        "analytics": "Análise de desempenho de estudantes",
+        "pathways": "Caminhos de aprendizagem personalizados"
+      }
+    },
+    "legal": {
+      "title": "Inteligência Jurídica",
+      "description": "Inteligência de documentos, análise de contratos e automação de pesquisa jurídica para escritórios de advocacia e departamentos jurídicos.",
+      "items": {
+        "contracts": "Análise e revisão de contratos",
+        "automation": "Automação de documentos jurídicos",
+        "research": "Pesquisa de jurisprudência com IA",
+        "compliance": "Sistemas de monitoramento de conformidade"
+      }
+    }
+  },
+  "products": {
+    "badge": "Nossos Produtos",
+    "title": "Ferramentas Educacionais Alimentadas por IA",
+    "description": "Soluções avançadas de análise linguística e avaliação projetadas para pesquisadores e educadores.",
+    "linguistic": {
+      "title": "Extração de Características Linguísticas",
+      "description": "Ferramenta abrangente de análise de texto que fornece insights profundos sobre complexidade linguística, similar ao Coh-Metrix, permitindo que pesquisadores extraiam mais de 100 características linguísticas de textos.",
+      "items": {
+        "syntactic": "Métricas de complexidade sintática",
+        "lexical": "Análise de diversidade lexical",
+        "cohesion": "Medidas de coesão e coerência",
+        "readability": "Índices de legibilidade",
+        "batch": "Capacidades de processamento em lote"
+      }
+    },
+    "essay": {
+      "title": "Avaliação de Redações",
+      "description": "Sistema de pontuação e feedback automatizado de redações alimentado por IA que fornece avaliações instantâneas e abrangentes e sugestões acionáveis para melhorar a escrita dos alunos.",
+      "items": {
+        "scoring": "Pontuação e classificação automatizada",
+        "feedback": "Geração de feedback detalhado",
+        "evaluation": "Avaliação multi-critério",
+        "tracking": "Análise de acompanhamento de progresso",
+        "rubrics": "Rubricas personalizáveis"
+      }
+    }
+  },
+  "cta": {
+    "title": "Pronto para Transformar Seus Dados?",
+    "description": "Vamos discutir como a BXD pode ajudá-lo a desbloquear todo o potencial de seus dados e impulsionar o crescimento do negócio.",
+    "contactTitle": "Fale Conosco",
+    "contactText": "Entre em contato conosco em",
+    "email": "contato@bxd.company"
+  },
+  "footer": {
+    "copyright": "© 2025 BXD. Todos os direitos reservados."
+  },
+  "common": {
+    "learnMore": "Saiba Mais"
+  }
+}

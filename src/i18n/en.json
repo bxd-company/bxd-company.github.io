@@ -1,0 +1,157 @@
+{
+  "nav": {
+    "services": "Services",
+    "approach": "Approach",
+    "solutions": "Solutions",
+    "products": "Products"
+  },
+  "hero": {
+    "badge": "Building Extraordinary Discoveries",
+    "title": "Transform Data into Strategic Decisions with AI",
+    "description": "We help businesses unlock the full potential of their data through cutting-edge analytics, AI solutions, and modern data infrastructure.",
+    "contactUs": "Contact Us"
+  },
+  "services": {
+    "badge": "Our Services",
+    "title": "End-to-End Data Solutions",
+    "description": "From strategy to implementation, we deliver comprehensive data and AI solutions tailored to your business needs.",
+    "diagnostics": {
+      "title": "Technical & Business Diagnostics",
+      "description": "Comprehensive assessment of your data landscape and business requirements to identify opportunities and define clear objectives.",
+      "items": {
+        "assessment": "Data Maturity Assessment",
+        "analysis": "Business Process Analysis",
+        "evaluation": "Infrastructure Evaluation",
+        "roadmap": "Gap Analysis & Roadmap"
+      }
+    },
+    "ingestion": {
+      "title": "Data Ingestion",
+      "description": "Build robust pipelines to collect, validate, and integrate data from multiple sources into your analytics ecosystem.",
+      "items": {
+        "connectors": "Multi-Source Connectors",
+        "streaming": "Real-time Streaming",
+        "batch": "Batch Processing",
+        "validation": "Data Quality Validation"
+      }
+    },
+    "transformation": {
+      "title": "AI & Data Transformation",
+      "description": "Transform raw data into valuable insights using advanced AI models and intelligent automation techniques.",
+      "items": {
+        "ml": "Machine Learning Models",
+        "enrichment": "Data Enrichment",
+        "predictive": "Predictive Analytics",
+        "workflows": "Automated Workflows"
+      }
+    },
+    "visualization": {
+      "title": "Data Visualization",
+      "description": "Create intuitive dashboards and reports that make complex data accessible and actionable for decision-makers.",
+      "items": {
+        "dashboards": "Interactive Dashboards",
+        "reporting": "Custom Reporting",
+        "monitoring": "Real-time Monitoring",
+        "storytelling": "Data Storytelling"
+      }
+    }
+  },
+  "approach": {
+    "badge": "Our Approach",
+    "title": "How We Work",
+    "description": "A proven methodology that delivers results from day one.",
+    "steps": {
+      "discover": {
+        "title": "Discover",
+        "description": "We analyze your current data landscape, identify opportunities, and define clear objectives."
+      },
+      "design": {
+        "title": "Design",
+        "description": "Our experts architect scalable solutions tailored to your specific business requirements."
+      },
+      "develop": {
+        "title": "Develop",
+        "description": "We build and implement robust data solutions using industry best practices and modern tools."
+      },
+      "deliver": {
+        "title": "Deliver",
+        "description": "Continuous optimization and support ensure your data solutions evolve with your business."
+      }
+    }
+  },
+  "solutions": {
+    "badge": "Industry Solutions",
+    "title": "Tailored for Your Industry",
+    "description": "We deliver specialized data and AI solutions across multiple sectors.",
+    "clinical": {
+      "title": "Clinical Intelligence",
+      "description": "Clinical analytics, patient outcomes prediction, and operational efficiency solutions for healthcare providers.",
+      "items": {
+        "stratification": "Patient risk stratification models",
+        "operations": "Healthcare operations optimization",
+        "trials": "Clinical trial data analytics",
+        "imaging": "Medical imaging AI analysis"
+      }
+    },
+    "education": {
+      "title": "Smart Learning Solutions",
+      "description": "AI-powered learning solutions including automated essay assessment and personalized feedback systems.",
+      "items": {
+        "assessment": "Automated essay assessment",
+        "feedback": "Intelligent automatic feedback",
+        "analytics": "Student performance analytics",
+        "pathways": "Personalized learning pathways"
+      }
+    },
+    "legal": {
+      "title": "Legal Intelligence",
+      "description": "Document intelligence, contract analysis, and legal research automation for law firms and legal departments.",
+      "items": {
+        "contracts": "Contract analysis & review",
+        "automation": "Legal document automation",
+        "research": "Case law research AI",
+        "compliance": "Compliance monitoring systems"
+      }
+    }
+  },
+  "products": {
+    "badge": "Our Products",
+    "title": "AI-Powered Educational Tools",
+    "description": "Advanced linguistic analysis and assessment solutions designed for researchers and educators.",
+    "linguistic": {
+      "title": "Linguistic Feature Extraction",
+      "description": "Comprehensive text analysis tool that provides deep insights into linguistic complexity, similar to Coh-Metrix, enabling researchers to extract over 100+ linguistic features from texts.",
+      "items": {
+        "syntactic": "Syntactic complexity metrics",
+        "lexical": "Lexical diversity analysis",
+        "cohesion": "Cohesion and coherence measures",
+        "readability": "Readability indices",
+        "batch": "Batch processing capabilities"
+      }
+    },
+    "essay": {
+      "title": "Essay Assessment",
+      "description": "AI-powered automated essay scoring and feedback system that provides instant, comprehensive evaluations and actionable suggestions to improve student writing.",
+      "items": {
+        "scoring": "Automated scoring and grading",
+        "feedback": "Detailed feedback generation",
+        "evaluation": "Multi-criteria evaluation",
+        "tracking": "Progress tracking analytics",
+        "rubrics": "Customizable rubrics"
+      }
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Data?",
+    "description": "Let's discuss how BXD can help you unlock the full potential of your data and drive business growth.",
+    "contactTitle": "Contact Us",
+    "contactText": "Reach out to us at",
+    "email": "contato@bxd.company"
+  },
+  "footer": {
+    "copyright": "© 2025 BXD. All rights reserved."
+  },
+  "common": {
+    "learnMore": "Learn More"
+  }
+}
