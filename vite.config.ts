@@ -5,7 +5,7 @@
   import { writeFileSync } from 'fs';
 
   export default defineConfig({
-    base: '/',
+    base: '/homepage/',
     plugins: [
       react(),
       {
