@@ -21,9 +21,9 @@ export default function Homepage() {
               <a href="#approach" className="text-[#cad5e2] hover:text-white transition-colors">Approach</a>
               <a href="#solutions" className="text-[#cad5e2] hover:text-white transition-colors">Solutions</a>
               <a href="#products" className="text-[#cad5e2] hover:text-white transition-colors">Products</a>
-              <a href="#benefits" className="text-[#cad5e2] hover:text-white transition-colors">Why Us?</a>
-              <a href="#technology" className="text-[#cad5e2] hover:text-white transition-colors">Stack</a>
-              <a href="#partners" className="text-[#cad5e2] hover:text-white transition-colors">Partners</a>
+              {/* <a href="#benefits" className="text-[#cad5e2] hover:text-white transition-colors">Why Us?</a> */}
+              {/* <a href="#technology" className="text-[#cad5e2] hover:text-white transition-colors">Stack</a> */}
+              {/* <a href="#partners" className="text-[#cad5e2] hover:text-white transition-colors">Partners</a> */}
             </div>
           </div>
         </div>
@@ -544,8 +544,8 @@ export default function Homepage() {
         </div>
       </section>
 
-      {/* Why BXD Section */}
-      <section id="benefits" className="py-20 px-6">
+      {/* Why BXD Section - Temporarily Hidden */}
+      {false && <section id="benefits" className="py-20 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -640,10 +640,10 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section>
+      </section>}
 
-      {/* Technology Stack Section */}
-      <section id="technology" className="py-20 px-6 bg-[#0f172b]">
+      {/* Technology Stack Section - Temporarily Hidden */}
+      {false && <section id="technology" className="py-20 px-6 bg-[#0f172b]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-[#00b8db]/10 text-[#00b8db] border-[#00b8db]/20 mb-4">
@@ -717,10 +717,10 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section>
+      </section>}
 
-      {/* Partners Section */}
-      <section id="partners" className="py-20 px-6 bg-[#0a0f1e]">
+      {/* Partners Section - Temporarily Hidden */}
+      {false && <section id="partners" className="py-20 px-6 bg-[#0a0f1e]">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <Badge className="bg-[#ad46ff]/10 text-[#ad46ff] border-[#ad46ff]/20 mb-4">
@@ -733,7 +733,6 @@ export default function Homepage() {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center justify-items-center">
-            {/* Institutional Partners */}
             <div className="flex items-center justify-center w-full h-24 bg-[rgba(29,41,61,0.3)] border border-[#1d293d] rounded-lg hover:border-[#00b8db]/50 transition-all p-6">
               <span className="text-xl text-[#cad5e2] text-center">CESAR</span>
             </div>
@@ -751,7 +750,7 @@ export default function Homepage() {
             </div>
           </div>
         </div>
-      </section>
+      </section>}
 
       {/* CTA Section */}
       <section className="py-20 px-6">
@@ -814,7 +813,7 @@ export default function Homepage() {
               <ul className="space-y-2">
                 <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Contact Us</a></li>
                 <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Support</a></li>
-                <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Partners</a></li>
+                {/* <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Partners</a></li> */}
               </ul>
             </div>
           </div>
