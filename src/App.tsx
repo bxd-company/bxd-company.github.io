@@ -760,53 +760,9 @@ export default function Homepage() {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 px-6 bg-[#020618] border-t border-[#1d293d]">
-        <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-4 gap-8 mb-8">
-            <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <BXDLogo className="w-8 h-8" />
-                <span className="text-white text-xl font-semibold">BXD</span>
-              </div>
-              <p className="text-[#90a1b9]">
-                Building Extraordinary Discoveries through data and AI innovation.
-              </p>
-            </div>
-            <div>
-              <h3 className="text-white mb-4">Services</h3>
-              <ul className="space-y-2">
-                <li><a href="#service-diagnostics" className="text-[#90a1b9] hover:text-white transition-colors">Technical & Business Diagnostics</a></li>
-                <li><a href="#service-ingestion" className="text-[#90a1b9] hover:text-white transition-colors">Data Ingestion</a></li>
-                <li><a href="#service-transformation" className="text-[#90a1b9] hover:text-white transition-colors">AI & Data Transformation</a></li>
-                <li><a href="#service-visualization" className="text-[#90a1b9] hover:text-white transition-colors">Data Visualization</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-white mb-4">Company</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">About Us</a></li>
-                <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Careers</a></li>
-                <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Case Studies</a></li>
-                <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Blog</a></li>
-              </ul>
-            </div>
-            <div>
-              <h3 className="text-white mb-4">Contact</h3>
-              <ul className="space-y-2">
-                <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Support</a></li>
-                {/* <li><a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Partners</a></li> */}
-              </ul>
-            </div>
-          </div>
-          <div className="pt-8 border-t border-[#1d293d] flex justify-between items-center">
-            <p className="text-[#90a1b9] text-sm">© 2025 BXD. All rights reserved.</p>
-            <div className="flex gap-6">
-              <a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Privacy</a>
-              <a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Terms</a>
-              <a href="#" className="text-[#90a1b9] hover:text-white transition-colors">Cookies</a>
-            </div>
-          </div>
+      <footer className="py-8 px-6 bg-[#020618] border-t border-[#1d293d]">
+        <div className="max-w-7xl mx-auto text-center">
+          <p className="text-[#90a1b9] text-sm">© 2025 BXD. All rights reserved.</p>
         </div>
       </footer>
     </div>
